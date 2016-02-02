@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		344F56891C602C3A00397300 /* BucketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344F56871C602C3A00397300 /* BucketsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		344F568A1C602C3A00397300 /* BucketsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 344F56881C602C3A00397300 /* BucketsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		345283FE1C60018B00A29342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345283FD1C60018B00A29342 /* AppDelegate.swift */; };
 		345284001C60018B00A29342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 345283FF1C60018B00A29342 /* Assets.xcassets */; };
 		345284031C60018B00A29342 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345284011C60018B00A29342 /* MainMenu.xib */; };
+		3452840B1C6019DF00A29342 /* Bucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3452840A1C6019DF00A29342 /* Bucket.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		344F56871C602C3A00397300 /* BucketsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BucketsViewController.swift; path = ../BucketsViewController.swift; sourceTree = "<group>"; };
+		344F56881C602C3A00397300 /* BucketsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BucketsViewController.xib; path = ../BucketsViewController.xib; sourceTree = "<group>"; };
 		345283FA1C60018B00A29342 /* coffeetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coffeetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345283FD1C60018B00A29342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345283FF1C60018B00A29342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		345284021C60018B00A29342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		345284041C60018B00A29342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3452840A1C6019DF00A29342 /* Bucket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bucket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +56,12 @@
 		345283FC1C60018B00A29342 /* coffeetable */ = {
 			isa = PBXGroup;
 			children = (
+				344F56871C602C3A00397300 /* BucketsViewController.swift */,
+				344F56881C602C3A00397300 /* BucketsViewController.xib */,
 				345283FD1C60018B00A29342 /* AppDelegate.swift */,
 				345283FF1C60018B00A29342 /* Assets.xcassets */,
 				345284011C60018B00A29342 /* MainMenu.xib */,
+				3452840A1C6019DF00A29342 /* Bucket.swift */,
 				345284041C60018B00A29342 /* Info.plist */,
 			);
 			path = coffeetable;
@@ -116,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				345284001C60018B00A29342 /* Assets.xcassets in Resources */,
+				344F568A1C602C3A00397300 /* BucketsViewController.xib in Resources */,
 				345284031C60018B00A29342 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,7 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				344F56891C602C3A00397300 /* BucketsViewController.swift in Sources */,
 				345283FE1C60018B00A29342 /* AppDelegate.swift in Sources */,
+				3452840B1C6019DF00A29342 /* Bucket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +280,7 @@
 				345284091C60018B00A29342 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

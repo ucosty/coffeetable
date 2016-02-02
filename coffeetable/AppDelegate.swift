@@ -12,16 +12,26 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
+    @IBOutlet weak var menuView: NSView!
+    
+    var bucketsViewController: BucketsViewController!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        bucketsViewController = BucketsViewController(nibName: "BucketsViewController", bundle: nil)
+        
+        menuView.autoresizesSubviews = true
+        bucketsViewController.view.autoresizesSubviews = true
+                
+        menuView.addSubview(bucketsViewController.view)
+        bucketsViewController.view.frame = menuView.bounds
+        
+        bucketsViewController.view.layer?.backgroundColor = CGColorCreateGenericRGB(1.0, 0.0, 0.0, 0.0)
+
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
-
+    
 }
 
